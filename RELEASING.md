@@ -77,7 +77,7 @@ We use [Semantic Versioning](https://semver.org/):
     git checkout main
     git pull origin main
     git checkout -b release/x.y.z+1
-    git push origin release/x.y.z+1
+    git push -u origin release/x.y.z+1
     ```
 
 2.  **Delete the old release branch**:
