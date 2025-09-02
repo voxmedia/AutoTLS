@@ -1,0 +1,32 @@
+site_name: TLS Tool Docs
+repo_url: https://github.com/voxmedia/AutoTLS
+
+theme:
+  name: material
+
+docs_dir: documentation/config
+site_dir: documentation/_site
+
+nav:
+  - Home: index.md
+  - Components:
+      - Orchestrator: components/orchestrator.md
+      - Certificates: components/certificates.md
+      - Domains: components/domains.md
+      - Storage: components/storage.md
+      - Plug-Ins: components/plugins.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            inherited_members: true
+            separate_signature: true
+            show_category_heading: true
+            filters:
+              - "!^_"
+

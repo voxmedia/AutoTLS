@@ -1,0 +1,46 @@
+[project]
+name = "tlstool"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "Automated TLS cert generator"
+dependencies = [
+    "acme==4.1.1",
+    "boto3==1.39.8",
+    "botocore==1.39.8",
+    "certbot==4.1.1",
+    "click==8.1.8",
+    "coverage-badge==1.1.2",
+    "cryptography==45.0.6",
+    "ddtrace==3.10.2",
+    "dnspython==2.7.0",
+    "fastly==10.1.0",
+    "Flask==3.1.1",
+    "Flask-Login==0.6.3",
+    "Flask-SQLAlchemy==3.1.1",
+    "gevent==25.5.1",
+    "gunicorn==23.0.0",
+    "josepy==2.1.0",
+    "mkdocs==1.6.1",
+    "mkdocs-material==9.6.17",
+    "mkdocstrings[python]>=0.30.0",
+    "psycopg[binary,pool]==3.2.9",
+    "psycopg2-binary==2.9.9",
+    "pyasn1==0.6.1",
+    "pyasn1-modules==0.4.2",
+    "pyOpenSSL==25.1.0",
+    "pytest==8.4.1",
+    "pytest-cov==6.2.1",
+    "python-dateutil==2.9.0",
+    "python-dotenv<1,>=0.13.0",
+    "requests==2.32.4",
+    "ruff==0.12.5",
+    "slack-sdk==3.36.0",
+    "SQLAlchemy==2.0.41",
+    "Werkzeug==3.1.3",
+    "whois==0.9.27",
+    "whoisdomain==1.20250220.2"
+]
+
+[build-system]
+requires = ["flit_core >= 3.12.0, <4"]
+build-backend = "flit_core.buildapi"

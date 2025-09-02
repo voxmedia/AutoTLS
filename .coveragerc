@@ -1,0 +1,22 @@
+[run]
+branch = True
+source =
+    tlstool
+omit =
+    tests/*
+    */venv/*
+    */site-packages/*
+    *.pyc
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    except ImportError
+    raise NotImplementedError
+    pass  # defensive stubs
+    return NotImplemented
+
+precision = 2
+show_missing = True
+skip_covered = True
