@@ -1,6 +1,8 @@
 [![](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
+![Latest release](https://img.shields.io/github/v/release/voxmedia/AutoTLS?display_name=tag&sort=semver)
+![Tests](https://img.shields.io/github/actions/workflow/status/voxmedia/AutoTLS/pytest.yaml?branch=release/0.1.0&label=tests)
 
 # Table of Contents
 
@@ -85,8 +87,8 @@ python -m pip install -e .
 > [!NOTE]
 > If you run into errors with the `psycopg2` build, you may need to rebuild your venv with Python 3.9 (install using Homebrew (`brew install python@3.9`) or pyenv):
 ```
-python3.9 -m venv venv
-source venv/bin/activate
+python3.9 -m venv .venv
+source .venv/bin/activate
 python -m pip install -e .
 ```
 
