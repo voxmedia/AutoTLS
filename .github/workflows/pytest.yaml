@@ -1,6 +1,10 @@
 name: Run Unit Tests via PyTest
 
 on:
+  pull_request:
+    branches: [main, 'release/**']
+  push:
+    branches: [main, 'release/**']
   workflow_dispatch:
 
 jobs:
