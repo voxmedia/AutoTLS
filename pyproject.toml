@@ -1,3 +1,7 @@
+[build-system]
+requires = ["flit_core >= 3.12.0, <4"]
+build-backend = "flit_core.buildapi"
+
 [project]
 name = "tlstool"
 version = "0.1.0"
@@ -8,7 +12,7 @@ dependencies = [
     "boto3==1.39.8",
     "botocore==1.39.8",
     "certbot==4.1.1",
-    "click==8.1.8",
+    "click>=8.0,<8.2",
     "coverage-badge==1.1.2",
     "cryptography==45.0.6",
     "ddtrace==3.10.2",
@@ -41,6 +45,9 @@ dependencies = [
     "whoisdomain==1.20250220.2"
 ]
 
-[build-system]
-requires = ["flit_core >= 3.12.0, <4"]
-build-backend = "flit_core.buildapi"
+[project.urls]
+Homepage = "https://github.com/voxmedia/AutoTLS"
+Documentation = "https://github.com/voxmedia/AutoTLS#readme"
+Issues = "https://github.com/voxmedia/AutoTLS/issues"
+Changelog = "https://github.com/voxmedia/AutoTLS/blob/main/CHANGELOG.md"
+
