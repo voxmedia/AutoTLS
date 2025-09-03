@@ -61,6 +61,11 @@ We use [Semantic Versioning](https://semver.org/):
     git push origin vX.Y.Z
     ```
 
+**Merge policy:**  
+- Feature PRs into a release branch should be **Squash merged** (to keep history tidy).  
+- Release branch PRs back into `main` must be merged using a **Merge commit (no-ff)**.  
+  Do *not* squash the release branch → main PR, otherwise future release PRs will look like they reintroduce old changes.
+
 5.  **Create a GitHub Release** for the tag:
 
     -   Go to [Releases](/releases/new) → Draft a new release, select tag vx.y.z.
